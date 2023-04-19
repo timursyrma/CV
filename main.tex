@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj + some brand new features from Mary Feofanova
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{makecell}
+\usepackage[link=off]{phonenumbers}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[T1, T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian,english]{babel}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\usepackage[margin=0.3in]{geometry}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.0in}
+\addtolength{\evensidemargin}{-0.0in}
+\addtolength{\textwidth}{0in}
+\addtolength{\topmargin}{20pt}
+\addtolength{\textheight}{0.0in}
+
+\urlstyle{same}
+
+\usepackage{xcolor}% http://ctan.org/pkg/xcolor
+\usepackage{hyperref}% http://ctan.org/pkg/hyperref
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!red,
+  linkbordercolor=red,
+  urlcolor=blue!70!black
+}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\def \ifempty#1{\def\temp{#1} \ifx\temp\empty }
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+  	\ifempty{#1}#2\else\textbf{#1}{: #2 \vspace{-2pt}}\fi
+  }
+}
+
+\usepackage[dvipsnames]{xcolor}
+\definecolor{mygray}{gray}{0}
+\usepackage{fancybox}
+
+\usepackage{lmodern}
+\usepackage{tikz}
+
+% Style definition
+\tikzset{rndblock/.style={rounded corners,rectangle,draw,outer sep=0pt}}
+
+% Command Definition
+% 1 optional to customize the aspect, 2 mandatory: text to be framed
+\newcommand{\tframed}[2][]{\tikz[baseline=(h.base)]\node[rndblock,#1] (h) {\color{black}{#2}};}
+
+\newcommand*{\mystrut}{\rule[-0.2\baselineskip]{0pt}{0.8\baselineskip}}
+\newcommand{\skill}[1]{\tframed[lightgray]{\mystrut#1}}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textcolor{mygray}{#2} \\
+      \textit{\small#3} & \textcolor{mygray}{\textit{\small #4}} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeExpSubheading}[5]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1}  & \textcolor{mygray}{#2} \\
+      \textit{\small#3} & \textcolor{mygray}{\textit{\small #4}} \\
+      {\scriptsize#5}
+    \end{tabular*}\vspace{4pt}
+}
+
+\newcommand{\resumeProjSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1}  & \textcolor{mygray}{#2} \\
+      \scriptsize {#3} & \textcolor{mygray}{\textit{\small #4}} \\
+    \end{tabular*}\vspace{4pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.2in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\usepackage{changepage}
+\newcommand{\resumeDesc}[1]{\begin{adjustwidth}{5pt}{0pt}\vspace{-2pt}{\small{#1}}\end{adjustwidth}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Тимур Сырма} & Email : \href{mailto:timursyrma@gmail.com}{timursyrma@gmail.com}\\
+  Github: \href{https://github.com/timursyrma}{timursyrma} & Мобильный телефон: +7\hspace{0.5ex}911\hspace{0.5ex}295\hspace{0.5ex}47\hspace{0.5ex}14\\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Образование}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Университет ИТМО}{Санкт-Петербург, Россия}
+      {Факультет информационных технологий и программирования}{2020 - 2024}
+	\resumeSubheading
+	  {ГБУ ДО КК "Дворец творчества"}{Краснодар, Россия}
+	  {Центр цифрового образования IT.Cube}{2019-2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Опыт}
+  \resumeSubHeadingListStart
+      \resumeExpSubheading
+      {RadarIT}{Санкт-Петербург, Россия}
+      {Junior-разработчик}{Сентябрь 2023 - Октябрь 2023}
+	  {\skill{C\#} \skill{ASP.NET Core} \skill{ADO.NET} \skill{PostgreSQL} \skill{NUnit} \skill{xUnit} \skill{MOQ}}
+      \resumeDesc{
+      \begin{itemize}
+		  \item Разработка и поддержка REST API для конвертации текстовых данных в форматы PDF, DOCX
+		  \item Разработка и реализация тестовых сценариев для проверки функциональности и производительности кода
+
+      \end{itemize}}
+      \resumeExpSubheading
+      {Университет ИТМО, кафедра ИС}{Санкт-Петербург, Россия}
+      {Ассистент преподавателя, курс "Алгоритмы и Структуры Данных"}{Сентябрь 2023 - Настоящее время}
+	  {\skill{C++} \skill{}}
+      \resumeDesc{
+      \begin{itemize}
+          \item Проведение практических занятий, составление задач для контестов лабораторных работ
+      \end{itemize}}
+  \resumeSubHeadingListEnd
+
+\section{Проекты}
+  \resumeSubHeadingListStart
+      \resumeProjSubheading
+      {\href{https://github.com/timursyrma/jetbrains-pomodoro}{Pomodoro time-tracker plugin for JetBrains platform}}{Санкт-Петербург, Россия}
+	  {\skill{Java} \skill{IntelliJ Platform SDK}}{Март 2023}
+      
+  \resumeSubHeadingListEnd
+
+\section{Достижения}
+  \resumeSubHeadingListStart
+    \resumeProjSubheading
+	{\href{https://github.com/timursyrma/}{XenDay Network Log} - I место [ITMO \& VK Hackathon]}{Санкт-Петербург, Россия}
+      {\skill{Android Platform} \skill{AspectJ}}
+      {Апрель 2023}
+          \resumeDesc{SDK для отслеживания использования Andoid-устройствами непредсказуемо большого количества трафика}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Навыки}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Языки программирования}{: Java, C\#, C++, Python, C, Bash}
+   }\vspace{-7pt}
+   \item{
+     \textbf{Технологии}{: Linux, SQL, Git, Docker}
+   }
+   \vspace{-7pt}
+   \item{
+     \textbf{Знание}{: Алгоритмы и Структуры Данных, Протоколы сетевого уровня: TCP/IP, UDP}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
+
