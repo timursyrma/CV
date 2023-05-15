@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1681715525 "main.tex" "main.pdf" "main" 1681715525
+["pdflatex"] 1682181091 "main.tex" "main.pdf" "main" 1682181091
   "/etc/texmf/web2c/texmf.cnf" 1650705102 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/timur/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/larm0700.tfm" 1655980682 3256 b15a2ce2310c0038b96c5235b038f0eb ""
   "/home/timur/.texlive2021/texmf-var/fonts/tfm/lh/lh-t2a/larm0900.tfm" 1664709331 3244 8db84377f89b8850acd19c9879de82e7 ""
@@ -195,9 +195,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1663493990 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1663494004 2800364 21affa82e15daaa97226eaea4c84924b ""
-  "main.aux" 1681715411 1347 a5fb81f64995fb8d448cddd23103c7f6 "pdflatex"
-  "main.out" 1681715411 519 f1df30ae07e9b70e22c1a979c32d7204 "pdflatex"
-  "main.tex" 1681715525 7343 d9418119ebacf6a07b2b08f35e75ac93 ""
+  "main.aux" 1682181029 1347 a5fb81f64995fb8d448cddd23103c7f6 "pdflatex"
+  "main.out" 1682181029 519 f1df30ae07e9b70e22c1a979c32d7204 "pdflatex"
+  "main.tex" 1682181090 7359 6589b1af6f92da61f1856be3b051502b ""
   (generated)
   "main.aux"
   "main.log"
